@@ -1,0 +1,22 @@
+test cases for imageColoursDriver
+since this function could not be implemented the same way in the main program, this was instead used to check if the code I had in mind would produce the results that I wanted.
+Test 1:
+    colourRow = [1, 0.5, 1, 0, 1]
+    Expected Output:
+    [White Grey White Black White]
+    Actual Output:
+    [White Grey White Black White]
+
+Test 2:
+    colourRow = [1, 0.5, 1, 0]
+    Expected Output:
+    Error
+    Actual Output:
+    Error
+
+Test 3:
+colourRow = [0, 0, 0, 0, 0]
+Expected Output:
+[Black Black Black Black Black]
+Actual Output:
+[Black Black Black Black Black]

@@ -1,0 +1,78 @@
+Wordle Version 4 - Added visual to indicate if input letters are within the answer.
+Test 1: Testing if guesses will concatenate onto the same image.
+    answer = phase 
+    userInput(1) = pulse
+    Expected Output:
+    1x5 image array containing the following blocks of colour
+    [Black White White Black Black]
+    Actual Output:
+    1x5 image array
+    [Black White White Black Black]
+    userInput(2) = parse
+    Expected Output;
+    2x5 image array containing the following blocks of colour
+    [Black White White Black Black]
+    [Black Gray White Black Black]
+    Actual Output:
+    2x5 image array
+    [Black White White Black Black]
+    [Black Gray White Black Black]
+    userInput(3) = phase
+    Expected Output:
+    3x5 image array
+    [Black White White Black Black]
+    [Black Gray White Black Black]
+    [Black Black Black Black Black]
+    Congratulations, you got the answer correct!
+    Actual Output:
+    3x5 image array
+    [Black White White Black Black]
+    [Black Gray White Black Black]
+    [Black Black Black Black Black]
+    Congratulations, you got the answer correct!
+
+Test 2:
+    answer = shock
+    userInput(1) = craft
+    userInput(2) = scion
+    userInput(3) = soppy
+    userInput(4) = shoes
+    userInput(5) = shock
+    Expected Output (After userInput(5)):
+    5x5 image array
+    [Gray White White White White]
+    [Black Gray White Gray White]
+    [Black Gray White White White]
+    [Black Black Black White White]
+    [Black Black Black Black Black]
+    Congratulations, you got the answer correct!
+    Actual Output:
+    [Gray White White White White]
+    [Black Gray White Gray White]
+    [Black Gray White White White]
+    [Black Black Black White White]
+    [Black Black Black Black Black]
+    Congratulations, you got the answer correct!
+
+Test 3:
+    answer = bread
+    userInput(1) = earth
+    userInput(2) = pears
+    userInput(3) = arena
+    userInput(4) = dread
+    userInput(5) = tread
+    Expected Output (After userInput(5)):
+    5x5 image array
+    [Gray Gray Gray White White]
+    [White Gray Gray Gray White]
+    [Gray Black Black White Gray]
+    [White Black Black Black Black]
+    [White Black Black Black Black]
+    You have lost, the correct answer was bread.
+    Actual Output:
+    [Gray White White White White]
+    [Black Gray White Gray White]
+    [Black Gray White White White]
+    [Black Black Black White White]
+    [Black Black Black Black Black]
+    You have lost, the correct answer was bread.

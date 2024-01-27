@@ -1,0 +1,65 @@
+Wordle Version 1 - Basic foundation. Checks if letters from input match answer
+Test 1:
+    answer = route (answer is displayed to make testing more simple)
+    userInput = right
+    Expected output: 
+    The letter r is in the same position as the answer.
+    The letter i is not in the answer.
+    The letter g is not in the answer.
+    The letter h is not in the answer.
+    The letter t is in the answer.
+    Actual output:
+    The letter r is in the same position as the answer.
+    The letter i is not in the answer.
+    The letter g is not in the answer.
+    The letter h is not in the answer.
+    The letter t is not in the answer.
+The actual output is not the same as the expected output as the middle condition (letter is in the answer but not in the same position) is not displayed. A possible reason for the error is that the final condition (letter is not in the answer) does not have any imposed conditions, and since letters are compared in order, the final condition was checked first.
+
+Test 2: Added an if conditional when checking a letter that is not in the answer.
+    answer = hotel
+    userInput = house
+    Expected output: 
+    The letter h is in the same position as the answer.
+    The letter o is in the same position as the answer.
+    The letter u is not in the answer.
+    The letter s is not in the answer.
+    The letter e is in the answer.
+    Actual output:
+    The letter h is in the same position as the answer.
+    The letter o is in the same position as the answer.
+    The letter u is not in the answer.
+    The letter s is not in the answer.
+    The letter e is in the answer.
+
+Test 3:
+    answer = field
+    userInput = feels
+    Expected output: 
+    The letter f is in the same position as the answer.
+    The letter e is in the answer.
+    The letter e is in the same position as the answer.
+    The letter l is in the same position as the answer.
+    The letter s is not in the answer.
+    Actual output:
+    The letter f is in the same position as the answer.
+    The letter e is in the answer.
+    The letter e is in the same position as the answer.
+    The letter l is in the same position as the answer.
+    The letter s is not in the answer.
+
+Test 4:
+    answer = prize
+    userInput = pulse
+    Expected output: 
+    The letter p is in the same position as the answer.
+    The letter u is not in the answer.
+    The letter l is not in the answer.
+    The letter s is not in the answer.
+    The letter e is in the same position as the answer.
+    Actual output:
+    The letter p is in the same position as the answer.
+    The letter u is not in the answer.
+    The letter l is not in the answer.
+    The letter s is not in the answer.
+    The letter e is in the same position as the answer.

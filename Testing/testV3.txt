@@ -1,0 +1,40 @@
+Wordle Version 3 - Added checks to see if user has won the game or not.
+Test 1: Testing a loss
+    answer = value (answer is displayed to make testing more simple)
+    userInput(1) = ~value
+    userInput(2) = ~value
+    userInput(3) = ~value
+    userInput(4) = ~value
+    userInput(5) = ~value
+    Expected Output:
+    correctAnswer = false
+    ""You have lost, the correct answer was value" is displayed.
+    Actual Output:
+    correctAnswer = false
+    You have lost, the correct answer was value.
+
+Test 2: Testing a win
+    answer = right
+    userInput(1) = ~right
+    userInput(2) = ~right
+    userInput(3) = right
+    Expected Output:
+    correctAnswer = true
+    "Congratulations, you got the answer correct!" is displayed.
+    Actual Output:
+    correctAnswer = true
+    Congratulations, you got the answer correct!
+
+Test 3:
+    answer = noise
+    userInput(1) = ~noise
+    userInput(2) = ~noise
+    userInput(3) = ~noise
+    userInput(4) = ~noise
+    userInput(5) = noise
+    Expected Output:
+    correctAnswer = true
+    "Congratulations, you got the answer correct!" is displayed.
+    Actual Output:
+    correctAnswer = true
+    Congratulations, you got the answer correct!

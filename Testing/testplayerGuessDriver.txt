@@ -1,0 +1,15 @@
+test cases for playerGuess
+Test 1:
+userInput = trial
+Expected Output: userInput = 'trial'
+Actual Output: userInput = 'trial'
+
+Test 2: 
+userInput = fail
+Expected Output: Your word is not five letters long. Please enter a five letter word: 
+Actual Output: Your word is not five letters long. Please enter a five letter word: 
+
+Test 3:
+userInput = truth
+Expected Output: userInput = 'truth'
+Actual Output: userInput = 'truth'

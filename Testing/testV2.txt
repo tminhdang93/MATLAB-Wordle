@@ -1,0 +1,125 @@
+Wordle Version 2 - Added new loop to allow multiple guesses.
+Test 1: 
+    answer = plate (answer is displayed to make testing more simple)
+    Expected output:
+    userInput(1) = craft
+    The letter c is not in the answer.
+    The letter r is not in the answer.
+    The letter a is in the same position as the answer.
+    The letter f is not in the answer.
+    The letter t is in the answer.
+    userInput(2) = thats
+    The letter t is in the answer.
+    The letter h is not in the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter s is not in the answer.
+    userInput(3) = chats
+    The letter c is not in the answer.
+    The letter h is not in the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter s is not in the answer.
+    userInput(4) = slate
+    The letter s is not in the answer.
+    The letter l is in the same position as the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    userInput(5) = plate
+    The letter p is in the same position as the answer.
+    The letter l is in the same position as the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    Actual Output:
+    userInput(1) = craft
+    The letter c is not in the answer.
+    The letter r is not in the answer.
+    The letter a is in the same position as the answer.
+    The letter f is not in the answer.
+    The letter t is in the answer.
+    userInput(2) = thats
+    The letter t is in the answer.
+    The letter h is not in the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter s is not in the answer.
+    userInput(3) = chats
+    The letter c is not in the answer.
+    The letter h is not in the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter s is not in the answer.
+    userInput(4) = slate
+    The letter s is not in the answer.
+    The letter l is in the same position as the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    userInput(5) = plate
+    The letter p is in the same position as the answer.
+    The letter l is in the same position as the answer.
+    The letter a is in the same position as the answer.
+    The letter t is in the same position as the answer.
+    The letter e is in the same position as the answer.
+
+    Test 2:
+    answer = phase
+    Expected output:
+    userInput(1) = pulse
+    The letter p is in the same position as the answer.
+    The letter u is not in the answer.
+    The letter l is not in the answer.
+    The letter s is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    userInput(2) = parse
+    The letter p is in the same position as the answer.
+    The letter a is in the answer.
+    The letter r is not in the answer.
+    The letter s is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    userInput(3) = phase
+    The letter p is in the same position as the answer.
+    The letter h is in the same position as the answer.
+    The letter a is in the same position as the answer.
+    The letter s is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    Actual Output:
+    userInput(1) = pulse
+    The letter p is in the same position as the answer.
+    The letter u is not in the answer.
+    The letter l is not in the answer.
+    The letter s is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    userInput(2) = parse
+    The letter p is in the same position as the answer.
+    The letter a is in the answer.
+    The letter r is not in the answer.
+    The letter s is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    userInput(3) = phase
+    The letter p is in the same position as the answer.
+    The letter h is in the same position as the answer.
+    The letter a is in the same position as the answer.
+    The letter s is in the same position as the answer.
+    The letter e is in the same position as the answer.
+    
+    Test 3:
+    answer = thing
+    Expected Output:
+    userInput (1) = thing
+    The letter t is in the same position as the answer.
+    The letter h is in the same position as the answer.
+    The letter i is in the same position as the answer.
+    The letter n is in the same position as the answer.
+    The letter g is in the same position as the answer.
+    Actual Output:
+    userInput (1) = thing
+    The letter t is in the same position as the answer.
+    The letter h is in the same position as the answer.
+    The letter i is in the same position as the answer.
+    The letter n is in the same position as the answer.
+    The letter g is in the same position as the answer.
+
+In tests 2 and 3, the loop which asks for a user input still persists even after guessing each letter correct. A condition should be added in V3 which states whether the user has guessed the answer and skip the rest of the loops.
